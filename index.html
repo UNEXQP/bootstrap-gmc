@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">Travelz</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">Destination</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">Tour</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-mask"></div>
+        <div class="hero-content">
+            <h1>Welcome to Travelz</h1>
+            <p>Discover the World, One Journey at a Time</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+
+        </div>
+    </section>
+    <!-- Destinations Section -->
+    <section id="destinations" class="container my-5">
+        <h2 class="text-center mb-4">Top Destinations</h2>
+        <div class="row">
+            <!-- Destination 1 -->
+            <div class="col-md-4 destination-card">
+                <div class="card">
+                    <img src="./img/Default_Create_a_serene_vacation_scene_of_modern_Paris_with_th_3.jpg" class="card-img-top" alt="Destination 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Paris, France</h5>
+                        <p class="card-text">Experience the city of love with its iconic landmarks and rich culture.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Destination 2 -->
+            <div class="col-md-4 destination-card">
+                <div class="card">
+                    <img src="./img/Default_Create_a_serene_vacation_scene_of_modern_China_with_in_1.jpg" class="card-img-top" alt="Destination 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Tokyo, Japan</h5>
+                        <p class="card-text">Explore the vibrant city known for its mix of modernity and tradition.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Destination 3 -->
+            <div class="col-md-4 destination-card">
+                <div class="card">
+                    <img src="./img/Default_illustrate_a_tranquil_and_inviting_vacation_scene_set_0.jpg" class="card-img-top" alt="Destination 3">
+                    <div class="card-body">
+                        <h5 class="card-title">New York, USA</h5>
+                        <p class="card-text">Discover the city that never sleeps with its iconic skyline and bustling
+                            streets.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours" class="container my-5">
+        <h2 class="text-center mb-4">Our Tours</h2>
+        <div class="accordion" id="toursAccordion">
+            <!-- Tour 1 -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            European Adventure
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#toursAccordion">
+                    <div class="card-body">
+                        Experience the best of Europe with stops in Paris, Rome, and Berlin.
+                        <a href="#" class="btn btn-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tour 2 -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Asian Discovery
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#toursAccordion">
+                    <div class="card-body">
+                        Explore the wonders of Asia with visits to Tokyo, Beijing, and Bangkok.
+                        <a href="#" class="btn btn-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tour 3 -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            American Highlights
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#toursAccordion">
+                    <div class="card-body">
+                        Discover the highlights of the USA with stops in New York, Los Angeles, and Chicago.
+                        <a href="#" class="btn btn-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination of Interest</label>
+                <input type="text" class="form-control" id="destination"
+                    placeholder="Enter your destination of interest">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2024 Travel Agency. All rights reserved.</p>
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
